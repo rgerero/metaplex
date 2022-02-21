@@ -1,0 +1,70 @@
+{
+  "name": "WorldDomination #13",
+  "symbol": "XAR",
+  "description": "Test description",
+  "seller_fee_basis_points": 250,
+  "image": "13.png",
+  "external_url": "https://worlddomination.io",
+  "edition": 13,
+  "attributes": [
+    {
+      "trait_type": "10Background",
+      "value": "Shadow"
+    },
+    {
+      "trait_type": "9Front",
+      "value": "Front3"
+    },
+    {
+      "trait_type": "8FrontTip",
+      "value": "Front Tip3"
+    },
+    {
+      "trait_type": "7R Sleeve",
+      "value": "Sleeve R1"
+    },
+    {
+      "trait_type": "6R Sleeve Tip",
+      "value": "Sleeve Tip R3"
+    },
+    {
+      "trait_type": "5L Sleeve",
+      "value": "Sleeve L1"
+    },
+    {
+      "trait_type": "4L Sleeve Tip",
+      "value": "Sleeve Tip L4"
+    },
+    {
+      "trait_type": "3Collar",
+      "value": "Collar2"
+    },
+    {
+      "trait_type": "2Logo",
+      "value": "Tigers"
+    },
+    {
+      "trait_type": "t4",
+      "value": "Texture4"
+    },
+    {
+      "trait_type": "0Spectrum",
+      "value": "Hue"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "13.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "image",
+    "creators": [
+      {
+        "address": "4TVytWqT9d9CTiLy9jt2qBJpyoAQuvgCEJ3PxHg3V97A",
+        "share": 100
+      }
+    ]
+  }
+}

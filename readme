@@ -1,0 +1,36 @@
+phantom w1: CcbMTJEA3G89tKQWGUSGm5jQmJVfcHy73mozbxkYPYdo - .99 sol, 10000 usdc
+phantom w2: 4ho8QhUsTqiteWawUPttdi85knXJH8outviBPtofN8Qb - no amount
+
+pubkey: 4TVytWqT9d9CTiLy9jt2qBJpyoAQuvgCEJ3PxHg3V97A - 1 sol
+
+Config File: C:\Users\rgere\.config\solana\cli\config.yml
+RPC URL: https://api.devnet.solana.com 
+WebSocket URL: wss://api.devnet.solana.com/ (computed)
+Keypair Path: ~/config/solana/devnet-test.json
+Commitment: confirmed 
+yarn --version
+RPC URL PROD: https://api.mainnet-beta.solana.com , https://solana-mainnet.phantom.tech
+
+# solana-keygen grind --start-with DEV:1
+# solana config set --keypair <insert  keypair generated here>
+# solana airdrop 1	--this is to fund your devnet wallet
+# solana balanace
+# solana address
+
+#arweave-sol - for mainnet sol
+#arweave - for devnet sol
+#arweave-bundle - will be the new storage for devnet in sol
+
+ts-node js/packages/cli/src/candy-machine-v2-cli.ts upload -e devnet -k ~/config/solana/devnet-test.json -l debug -c cacheTmp -cp ./cmsetup.json ./assets
+ts-node .\js\packages\cli\src\candy-machine-v2-cli.ts verify_upload -e devnet -k D:\rgere\Documents\Projects\NFTGenerator\SOL_BE_FE\metaplex\~\config\solana\devnet-test.json -l debug -cp D:\rgere\Documents\Projects\NFTGenerator\SOL_BE_FE\metaplex\cmsetup.json -c cacheTmp
+ts-node .\js\packages\cli\src\candy-machine-v2-cli.ts show -e devnet -k D:\rgere\Documents\Projects\NFTGenerator\SOL_BE_FE\metaplex\~\config\solana\devnet-test.json -l debug -cp D:\rgere\Documents\Projects\NFTGenerator\SOL_BE_FE\metaplex\cmsetup.json -c cacheTmp
+
+D:\rgere\Documents\Projects\NFTGenerator\SOL_BE_FE\metaplex\~\config
+D:\rgere\Documents\Projects\NFTGenerator\SOL_BE_FE\metaplex\
+devnet-cacheTmp
+ts-node ./js/packages/cli/src/candy-machine-v2-cli.ts upload \
+    -e devnet \
+    -k ./js/cm.devnet.json \
+    -cp ./js/config.json \
+    -c temp \
+    ./js/assets-pictures

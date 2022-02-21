@@ -379,11 +379,15 @@ programCommand('verify_upload')
     'custom rpc url since this is a heavy command',
   )
   .action(async (directory, cmd) => {
-    const { env, keypair, rpcUrl, cacheName } = cmd.opts();
+    const { env, keypair, rpcUrl, cacheName } = cmd.opts(); //alfred change const to let
+    // cacheName="D:\rgere\Documents\Projects\NFTGenerator\SOL_BE_FE\metaplex\.cache\devnet-cacheTmp.json"; // hard code the correct cacheName i set in my program
+    console.log('cache name -> ' + cacheName);
 
     const cacheContent = loadCache(cacheName, env);
     const walletKeyPair = loadWalletKey(keypair);
     const anchorProgram = await loadCandyProgramV2(walletKeyPair, env, rpcUrl);
+
+    //console.log(cacheContent.program.candyMachine);
 
     const candyMachine = await anchorProgram.provider.connection.getAccountInfo(
       new PublicKey(cacheContent.program.candyMachine),
